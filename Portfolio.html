@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .square{
+            height: 800px;
+            width: 1100px;
+            border: 0;
+            background-color: #6a725d;
+            position: absolute;
+            top: 0px;
+            left: 205px;
+        }
+        body{
+            background-color: #c4c8b7;
+            overflow: hidden;
+            color:gainsboro;
+        }
+        .side{
+            height: 400px;
+            width: 100px;
+            background-color: white;
+        }
+        .side.left{
+            position: absolute;
+            top: 0px;
+            left: 90px;
+        }
+        .side.right{
+            position: absolute;
+            bottom: 0px;
+            right: 115px;
+        }
+        img{
+            border-radius: 50%;
+            border: 2px solid red;
+            position: absolute;
+            top: 140px;
+            left: 50px;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: goldenrod;
+        }
+        h2{
+            position: absolute;
+            top: 350px;
+            left: 50px;
+            font-family:'Times New Roman', Times, serif;
+            color:chocolate;
+        }
+        h3{
+            position: absolute;
+            top: 375px;
+            left: 70px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:greenyellow;
+        }
+        #contact{
+            left: 50px;
+            top: 500px;
+            color:khaki;
+        }
+        #details{
+            position: absolute;
+            top: 550px;
+            left: 50px;
+            width: 350px;
+            color: yellow;
+        }
+        .about{
+            top: 115px;
+            left: 430px;
+        }
+        .about.para{
+            position: absolute;
+            top: 150px;
+            left: 460px;
+            width: 480px;
+            text-align: justify;
+        }
+        .edu{
+            top: 235px;
+            left: 430px;
+        }
+        .work{
+            top: 340px;
+            left: 430px;
+            width: 480px;
+        }
+        .hobby{
+            top: 435px;
+            left: 430px;
+        }
+        .detail{
+            top: 535px;
+            left: 430px;
+        }
+        ul > li{
+            position: relative;
+            top:205px;
+            left: 430px;
+        }
+        .para{
+            position: absolute;
+            top: 375px;
+            left: 460px;
+            text-align: justify;
+            width: 470px;
+        }
+        ul.hob > li{
+            position: relative;
+            top: 325px;
+            left: 430px;
+        }
+        ul.area > li{
+            position: relative;
+            top: 355px;
+            left: 430px;
+        }
+        #name{
+            color:goldenrod;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a{
+            color: gainsboro;
+            text-decoration: none;
+        }
+        h4{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+        <h1><u>PORTFOLIO</u></h1>
+        <h2 id="name">Asish Kumar Sahani</h2>
+        <h3>B.Tech (CSE) 3<sup>rd</sup> year <br><center>VITAM, Berhampur</center></h3>
+        <h2 id="contact">Contact Me : </h2>
+        <div id="details">
+        <h4>E-mail - <a href="sasish035@gmail.com">sasish035@gmail.com</a></h4>
+        <h4>Linkedin - <a href="http://www.linkedin.com/in/asish-sahani-4669bb2a1">http://www.linkedin.com/in/asish-sahani-4669bb2a1</a></h4>
+        <h4>GitHub - <a href="">Sasish2668</a></h4></div>
+        <div class="image">
+        <img src="Untitled.jpg" alt="" height="200" width="200"></div>
+        <h2 class="about">About Me </h2>
+        <p class="about para">I am studying B.Tech in Computer Science at Vignan Institute of Technology And Management. I am a Web Designer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day. </p>
+        <h2 class="edu">Education </h2>
+        <ul>
+            <li>B.Tech (CSE) at VITAM, Berhampur</li>
+            <li>12<sup>th</sup> at OAV Sasan Ambagan, Hinjilicut</li>
+            <li>10<sup>th</sup> at OAV Kusumi</li>
+        </ul>
+        <h2 class="work">Work Experience </h2>
+        <p class="para">As a fresher, I have no work experience. However I want to ustilize my work to design many interesting and informative websites and many more things.
+        </p>
+        <h2 class="hobby">Hobbies</h2>
+        <ul class="hob">
+            <li>Reading Articles</li>
+            <li>Designing Small Website</li>
+            <li>Watching Anime Shows</li>
+        </ul>
+        <h2 class="detail">Details </h2>
+        <ul type="square" class="area">
+            <li><strong>Address</strong> : At-Siriapur, Po-Bantapalli, Berhampur, Ganjam, Odisha, 760002</li>
+            <li><strong>Date of Birth</strong> : 10th January 2004</li>
+            <li><strong>Nationality</strong> : Indian</li>
+            <li><strong>Languages Known</strong> : Odia, Hindi, English</li>
+        </ul>
+        
+    </div>
+</div>
+    <div class="side left"></div>
+    <div class="side right"></div>
+    
+</body>
+</html>
