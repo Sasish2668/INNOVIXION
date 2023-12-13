@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chocolate;
+}
+body{
+    background-color: chartreuse;
+    padding-top: 100px;
+    display: flex;
+    justify-content:center;
+}
+.countdown{
+    display: flex;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.time-section{
+    text-align: center;
+    font-size: 30px;
+}
+.time-group{
+    display: flex;
+    gap: 10px;
+}
+.time-segment{
+    display: block;
+    font-size: 110px;
+    font-weight: 900;
+    width: 100px;
+}
+.segment-display{
+    position: relative;
+    height: 100%;
+}
+.segment-display_top, .segment-display_bottom{
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 4px 0;
+    -webkit-text-stroke: 2px rgb(0, 217, 255);
+    border: 1px solid black;
+}
+.segment-display_top{
+    background-color: #111;
+    color: #eee;
+    line-height: 1.5;
+}
+.segment-display_bottom{
+    background-color: #333;
+    color: #fff;
+    line-height: 0;
+}
+.segment-overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    perspective: 400px;
+}
+.segment-overlay_top, .segment-overlay_bottom{
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 4px 0;
+    border: 1px solid black;
+    -webkit-text-stroke: 2px rgb(0, 217, 255);
+}
+.segment-overlay_top{
+    top: 0;
+    line-height: 1.5;
+    color: #eee;
+    background-color: #111;
+    transform-origin: bottom;
+}
+.segment-overlay_bottom{
+    bottom: 0;
+    line-height: 0;
+    color: #fff;
+    background-color: #333;
+    transform-origin: top;
+}
+.segment-overlay.flip .segment-overlay_top{
+    animation: flip-top 0.8s linear;
+}
+.segment-overlay.flip .segment-overlay_bottom{
+    animation: flip-bottom 0.8s linear;
+}
+@keyframes flip-top {
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%, 100%{
+        transform: rotateX(-90deg);
+    }
+}
+@keyframes flip-bottom {
+    0%, 50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+p{
+    font-family: fantasy;
+    text-transform: uppercase;
+}
